@@ -1,8 +1,12 @@
 {
   "name": "github-avatar-scraper",
+  "description": "scrapes github avatars",
+  "repository": "git@github.com:deadlyicon/github-avatar-scraper.git",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "bin" : {
+    "cat-github-avatar" : "./cat-github-avatar.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
