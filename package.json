@@ -2,7 +2,7 @@
   "name": "github-avatar-scraper",
   "description": "scrapes github avatars",
   "repository": "git@github.com:deadlyicon/github-avatar-scraper.git",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "bin" : {
     "cat-github-avatar" : "./cat-github-avatar.js"
