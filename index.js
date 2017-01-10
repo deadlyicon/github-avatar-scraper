@@ -8,16 +8,15 @@ const getAvatarURIForGithubUsername = username => {
     uri: `https://github.com/${username}`,
     transform: body => cheerio.load(body),
   })
-  .then($ => $('.avatar').attr('src'))
-    // const avatar = $('.avatar').attr('src')
-    // console.log(`${username}:`)
-    // catImage(avatar)
-    // return {username, avatar}
-  // })
+  .then($ => {
+    return $('.avatar').attr('src')
+  })
 }
 
 const getAvatarImageForGithubUsername = username => {
-  return getAvatarURIForGithubUsername(username).then(request)
+  return getAvatarURIForGithubUsername(username).then(avatarUrl => {
+    return requestPromise(avatarUrl)
+  })
 }
 
 
